@@ -1,4 +1,19 @@
+
+
 def get_invoice_items(items):
+    invoice_items=[]
+    for item in items:
+        inputitem= input("Item (enter 'done' when finished")
+        price= int (input("price:"))
+        quantity= int (input(" quantity:"))
+        item={"item":inputitem,"price": price,"quantity":quantity}
+        return invoice_items.append[item]
+    if inputitem== "done":
+        return invoice_items 
+
+    
+
+            
     # Items is a dictionary with a quantity and price key, and a name key
     # Return a list of all the invoice line items in the following format:
     # quantity name subtotal currency
@@ -11,14 +26,19 @@ def get_invoice_items(items):
     # ['1 Apple 0.200KD', '4 Orange 1.200KD']
     # ---
     # Write your code here
-    ...
+    
 
 
 def get_total(items):
+    total= 0
+    for item in items:
+        subtotal= item["quantity"] *item["price"]
+        total= total+ subtotal
+        return total 
     # Items is a dictionary with a quantity and price key
     # Calculate the total of all items in the cart
     # Write your code here
-    ...
+    
 
 
 def print_receipt(invoice_items, total):
@@ -28,7 +48,13 @@ def print_receipt(invoice_items, total):
     # total at the end.
     # ---
     # Write your code here
-    ...
+    print ("-------")
+    print("reciept")
+    print("---------")
+    
+    
+
+
 
 
 def main():
