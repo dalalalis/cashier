@@ -3,14 +3,9 @@
 def get_invoice_items(items):
     invoice_items=[]
     for item in items:
-        inputitem= input("Item (enter 'done' when finished")
-        price= int (input("price:"))
-        quantity= int (input(" quantity:"))
-        item={"item":inputitem,"price": price,"quantity":quantity}
-        return invoice_items.append[item]
-    if inputitem== "done":
-        return invoice_items 
-
+        item={"name":name, "quanity": quantity, "price":price}
+        invoice_items.append 
+        return invoice_items
     
 
             
@@ -51,6 +46,11 @@ def print_receipt(invoice_items, total):
     print ("-------")
     print("reciept")
     print("---------")
+    for invoiceitem in invoice_items:
+        invoiceitem= quantity + name + (quantity*price)
+        print (invoiceitem)
+    print("-----------------------")
+    print (f" Total price\ {total}")
     
     
 
@@ -58,8 +58,21 @@ def print_receipt(invoice_items, total):
 
 
 def main():
-    # Write your main logic here
-    ...
+    items=[]
+    for item in items:
+        inputitem= input("Item (enter 'done' when finished")
+        price= int (input("price:"))
+        quantity= int (input(" quantity:"))
+        item={"item":inputitem,"price": price,"quantity":quantity}
+        return items.append[item]
+    if inputitem== "done":
+        return items 
+    get_invoice_items(items)
+    get_total(get_invoice_items)
+    print_receipt(get_invoice_items,get_total)
+
+# Write your main logic here
+    
 
 
 if __name__ == "__main__":
