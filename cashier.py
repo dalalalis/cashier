@@ -71,10 +71,10 @@ def main():
     get_invoice_items(items)
     get_total(get_invoice_items)
     print_receipt(get_invoice_items,get_total)
+    
 
 # Write your main logic here
     
-
 
 if __name__ == "__main__":
     main()
