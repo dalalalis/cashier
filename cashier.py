@@ -1,8 +1,9 @@
 
 
 def get_invoice_items(items):
+
     invoice_items=[]
-    for item in items:
+    while item in items:
         item={"name":name, "quanity": quantity, "price":price}
         invoice_items.append 
         return invoice_items
